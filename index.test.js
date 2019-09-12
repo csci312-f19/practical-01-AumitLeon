@@ -29,7 +29,7 @@ describe('Determines age based on birthday', () => {
     expect(dob).toBe(0);
   });
 
-  test('Return 1 if birthday was a year from today', () => {
+  test('Return 1 if birthday was a year ago', () => {
     expect(birthday.howOld(new Date('01 Jan 2017'))).toBe(1);
   });
 
