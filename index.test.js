@@ -20,7 +20,7 @@ describe('Determines age based on birthday', () => {
   });
 
   // setup for additional tests
-  test('Returns 0 if birthday is today', () => {
+  test('Return 0 if birthday is today', () => {
     expect(birthday.howOld(new Date('01 Jan 2018'))).toBe(0);
   });
 
@@ -38,6 +38,7 @@ describe('Determines age based on birthday', () => {
     expect(dob).toBe(0);
   });
 
+  // Test leap years
   test('Return 1 if birthday is on Feb 29th, 2016 (leap year)', () => {
     const dob = birthday.howOld(new Date('29 Feb 2016'));
     expect(dob).toBe(1);
